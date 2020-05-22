@@ -30,7 +30,7 @@ def shiftsPatterns2004_2010(dict):
 	return dict
 
 
-def shiftsPatterns2010_2018(dict):
+def shiftsPatterns2015_2018(dict):
 	try:
 		if int(dict['co_turno_graduacao']) == 1:
 			dict["varCursoTurnos"].update({'varCursoMatutino': True})
