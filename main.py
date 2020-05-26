@@ -4,7 +4,7 @@ from utils.read_archive import readArchive
 from utils.new_atributes import new_atributes
 from course_patterns.course import patternShifts
 from economic_questions.economic_questions import formatQuestions_EconomicPartner
-
+from Perception_of_proof.format_Proof_Perception import formatQuestions_proofPerception
 path = 'Dados/2017exp.txt'
 
 
@@ -19,6 +19,7 @@ def execute():
 		dict = new_atributes(dict)
 		dict = patternShifts(dict)
 		dict = formatQuestions_EconomicPartner(dict)
+		dict = formatQuestions_proofPerception(dict)
 		print(dict)
 
 
