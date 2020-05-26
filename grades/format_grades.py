@@ -14,7 +14,7 @@ def grades_ce_discursive_indiv(dict):
 			)
 			del dict[keys]
 
-	return format_dict(dict, 'notas_ce_d_indi', 'notas')
+	return format_dict(dict, 'notas', 'notas_ce_d_indi')
 
 
 def grades_ce_geral(dict):
@@ -27,7 +27,7 @@ def grades_ce_geral(dict):
 				{keys: dict[nt_ce]}
 			)
 			del dict[keys]
-	return format_dict(dict, 'notas_ce', 'notas')
+	return format_dict(dict, 'notas', 'notas_ce')
 
 
 def grades_fg(dict):
@@ -40,7 +40,7 @@ def grades_fg(dict):
 				{keys: dict[nt_fg]}
 			)
 			del dict[keys]
-	return format_dict(dict, 'notas_fgs', 'notas')
+	return format_dict(dict, 'notas', 'notas_fgs')
 
 
 def format_grades(dict):
@@ -48,5 +48,5 @@ def format_grades(dict):
 	grades_ce_discursive_indiv(dict)
 	grades_ce_geral(dict)
 	grades_fg(dict)
-	format_dict(dict, 'nt_ger', 'notas')
+	format_dict(dict, 'notas', 'nt_ger')
 	return dict
