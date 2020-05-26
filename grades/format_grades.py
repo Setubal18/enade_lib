@@ -1,5 +1,6 @@
 from utils.globals import re
 from utils.format_dict import format_dict
+from utils.new_atributes import new_atributes
 
 
 def grades_ce_discursive_indiv(dict):
@@ -43,6 +44,7 @@ def grades_fg(dict):
 
 
 def format_grades(dict):
+	new_atributes(dict,'notas')
 	grades_ce_discursive_indiv(dict)
 	grades_ce_geral(dict)
 	grades_fg(dict)

@@ -19,6 +19,7 @@ def execute():
 	enadeData = transformDict(keys, data)
 
 	for dict in enadeData:
+		print('before',dict)
 		patternShifts(dict)
 		formatQuestions_EconomicPartner(dict)
 		formatQuestions_proofPerception(dict)

@@ -1,7 +1,11 @@
 import re
 
+from utils.new_atributes import new_atributes
+from utils.globals import re
+
 
 def formatQuestions_EconomicPartner(dict):
+	new_atributes(dict, 'socioEconomico_Questionario')
 	index = 1
 	for keys in list(dict.keys()):
 		x = re.search('qe_i\d+', keys)
