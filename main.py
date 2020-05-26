@@ -1,3 +1,4 @@
+from situations.discursive_situation import format_disc_situation
 from utils.change_vars import lowerVars, updatedVars
 from utils.covert_to_dict import transformDict
 from utils.read_archive import readArchive
@@ -19,11 +20,11 @@ def execute():
 	enadeData = transformDict(keys, data)
 
 	for dict in enadeData:
-		print('before',dict)
 		patternShifts(dict)
 		formatQuestions_EconomicPartner(dict)
 		formatQuestions_proofPerception(dict)
 		format_grades(dict)
+		format_disc_situation(dict)
 		print(dict)
 
 
