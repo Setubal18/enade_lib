@@ -1,3 +1,6 @@
+import re
+
+
 def format_dict(dict, father_name, *sons_names, ):
 	try:
 		for key in list(dict.keys()):
@@ -16,3 +19,11 @@ def format_dict(dict, father_name, *sons_names, ):
 				})
 				del dict[key]
 		return dict
+
+
+def find_attribute_and_update(dict, regex,name):
+	for keys in list(dict.keys()):
+		found = re.search(regex, keys)
+		if found:
+			dict = format_dict(dict,name,found.string)
+	return dict
