@@ -2,9 +2,10 @@ from perception_of_proof.add_atributes import version_2004_2010, version_2011Plu
 from utils.globals import re
 from utils.new_atributes import new_atributes
 
+
 def formatQuestions_proofPerception(dict):
 	index = 1
-	new_atributes(dict,'percepcao_prova')
+	new_atributes(dict, 'percepcao_prova')
 	for keys in list(dict.keys()):
 		versao_2004_2010 = re.search('qp_i\d+', keys)
 		versao_2011plus = re.search('co_rs_i\d+', keys)
@@ -21,6 +22,3 @@ def formatQuestions_proofPerception(dict):
 
 	quantity_questions(dict)
 	return dict
-
-
-

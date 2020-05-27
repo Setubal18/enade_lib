@@ -21,9 +21,9 @@ def format_dict(dict, father_name, *sons_names, ):
 		return dict
 
 
-def find_attribute_and_update(dict, regex,name):
+def find_attribute_and_update(dict, regex, name):
 	for keys in list(dict.keys()):
 		found = re.search(regex, keys)
 		if found:
-			dict = format_dict(dict,name,found.string)
+			dict = format_dict(dict, name, found.string)
 	return dict
