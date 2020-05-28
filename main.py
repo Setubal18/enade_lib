@@ -10,15 +10,10 @@ from grades.format_grades import format_grades
 from vectors.group_vectors import agroup_vectors
 from institution_student.agroup import institution, students
 import situations
-path = 'Dados/2018exp.txt'
 
-
-# 2004exp.csv
-# 2013exp.txt
-# 2018exp.txt
-# 2011exp.txt
 
 def execute():
+	path = input('caminho',)
 	keys, data = readArchive(path)
 	keys = lowerVars(keys)
 	keys = updatedVars(keys)
