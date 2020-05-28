@@ -1,5 +1,5 @@
 from perception_of_proof.add_atributes import version_2004_2010, version_2011Plus, quantity_questions
-from utils.globals import re
+import re
 from utils.new_atributes import new_atributes
 
 
