@@ -1,4 +1,4 @@
-from utils.globals import re
+import re
 
 def version_2004_2010(versao_2004_2010, i, dict):
 	dict['percepcao_prova'].update(
