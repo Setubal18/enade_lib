@@ -11,10 +11,8 @@
 /Variaveis dos Dados/
 /Dados/
 .idea/
-settings.py
-env
-.settings.py/
-.env/
+.env
+/.env/
 
 # User-specific stuff
 .idea/**/workspace.xml

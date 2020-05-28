@@ -1,4 +1,7 @@
 import re
+from utils.change_vars import lowerVars, updatedVars
+from utils.covert_to_dict import transformDict
+from utils.generateCode import generateCode
 
 
 def format_dict(dict, father_name, *sons_names, ):
@@ -27,3 +30,11 @@ def find_attribute_and_update(dict, regex, name):
 		if found:
 			dict = format_dict(dict, name, found.string)
 	return dict
+
+
+def format_array_dict(keys, data):
+	keys = lowerVars(keys)
+	keys = updatedVars(keys)
+	enadeData = transformDict(keys, data)
+	enadeData = generateCode(enadeData)
+	return enadeData
