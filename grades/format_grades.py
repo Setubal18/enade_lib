@@ -1,6 +1,4 @@
-from utils.globals import re
 from utils.format_dict import format_dict, find_attribute_and_update
-from utils.new_atributes import new_atributes
 
 
 def grades_ce_discursive_indiv(dict):
