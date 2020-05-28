@@ -4,15 +4,15 @@ from utils.new_atributes import new_atributes
 
 
 def grades_ce_discursive_indiv(dict):
-	return find_attribute_and_update(dict, 'nt_ce_d\d+', 'notas_ce_d_indi')
+	return find_attribute_and_update(dict, '(nt_ce_d\d+)', 'notas_ce_d_indi')
 
 
 def grades_ce_geral(dict):
-	return find_attribute_and_update(dict, '((nt_\w+ce)|(nt_ce_\w+))', 'notas_ce')
+	return find_attribute_and_update(dict, '((nt_ce)|(nt_\w+ce)|(nt_ce_\w+))', 'notas_ce')
 
 
 def grades_fg(dict):
-	return find_attribute_and_update(dict, '((nt_\w+fg)|(nt_fg_\w+))', 'notas_fgs')
+	return find_attribute_and_update(dict, '((nt_fg)|(nt_\w+fg)|(nt_fg_\w+))', 'notas_fgs')
 
 
 def format_grades(dict):
