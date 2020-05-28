@@ -8,7 +8,8 @@ from perception_of_proof.format_Proof_Perception import formatQuestions_proofPer
 from grades.format_grades import format_grades
 from situations.presence_types import presences
 from vectors.group_vectors import agroup_vectors
-from institution_student.agroup import institution
+from institution_student.agroup import institution, students
+
 path = 'Dados/2018exp.txt'
 #2004exp.csv
 #2013exp.txt
@@ -30,7 +31,7 @@ def execute():
 		presences(dict)
 		agroup_vectors(dict)
 		institution(dict)
-
+		students(dict)
 		print(dict)
 
 
